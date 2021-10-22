@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+    table, th, td {
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     ul {
+        display: table;
+        margin: 0 auto;
+    }
+    h1, div, p {
+        text-align: center;
+    }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Headline</h1>
+
+    <table style="width: 25%">
+        <tr>
+            <th>Navn</th>
+            <th>Alder</th>
+            <th>Land</th>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Mago</td>
+            <td>24</td>
+            <td>Russland</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Marius</td>
+            <td>32</td>
+            <td>Somalia</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>Magnus</td>
+            <td>23</td>
+            <td>Norge</td>
+        </tr>
+    </table>
+    <br />
+    <ul>
+        <li>Magomed</li>
+        <li>is</li>
+        <li>the</li>
+        <li>shit</li>
+    </ul>
+    <br />
+    <div>
+        <input type="checkbox" id="minCheckbox" onclick="doSomething()"> klikk her!
+    </div>
+    <p id="text" style="display:none">Checkbox er checked</p>
+
+
+    <script>
+        function doSomething() {
+            var myCheck = document.getElementById("minCheckbox");
+            var myText = document.getElementById("text");
+
+            if (myCheck.checked == true) {
+                myText.style.display = "block";
+            } else {
+                myText.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
