@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="tekst1" onclick="sendTekst(this, 'pink')">Tekst 1</div>
+    <div id="tekst2" onclick="sendTekst(this, 'green')">Tekst 2</div>
+    <div id="tekst3" onclick="sendTekst(this, 'blue')">Tekst 3</div>
+    <div id="tekst4" onclick="sendTekst(this, 'red')">Tekst 4</div>
+    <div id="tekst5" onclick="sendTekst(this, 'orange')">Tekst 5</div>
+    <div id="tomTekst"></div>
+
+
+    <script>
+
+        function sendTekst(element, color) {
+            console.log("Sendtekst funksjon");
+            document.getElementById('tomTekst').innerHTML += element.innerHTML + '</br>';
+            element.innerHTML = `<div style="background-color: ${color};"> ${element.innerHTML} </div>`;
+        }
+
+
+    </script>
+</body>
+</html>
